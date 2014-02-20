@@ -20,11 +20,12 @@ function initializePage() {
 
 		// this is the URL we'll call
 		var url_call = '/project/'+idNumber;
-
+		console.log(idNumber);
 		// How to respond to the GET request
 		function addProjectDetails(project_json) {
 			// We need to compute a display string for the date
 			// Search 'toLocaleDateString' online for more details.
+			console.log("We are here3");
 			var date_obj = new Date(project_json['date']);
 			var options = {
 				weekday: "long",
